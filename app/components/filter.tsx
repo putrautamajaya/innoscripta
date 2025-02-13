@@ -19,7 +19,7 @@ const Filter = ({ onChange }: FilterProps) => {
   const [filter, setFilter] = useState<Filter>({
     keyword: "",
     date: dayjs().format("YYYY-MM-DD"),
-    source: "newsAPI",
+    source: "theGuardian",
   });
 
   const debounceRef = useRef(setTimeout(() => {}));
@@ -41,6 +41,7 @@ const Filter = ({ onChange }: FilterProps) => {
       <NativeSelect
         label="Source"
         description="Select your news source"
+        value={filter.source}
         data={[
           { label: "News API", value: "newsAPI" },
           { label: "The Guardian", value: "theGuardian" },

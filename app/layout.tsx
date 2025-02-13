@@ -17,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <QueryClientProvider client={queryClient}>
-          <MantineProvider>{children}</MantineProvider>
-        </QueryClientProvider>
+        <div suppressHydrationWarning>
+          <QueryClientProvider client={queryClient}>
+            <MantineProvider>{children}</MantineProvider>
+          </QueryClientProvider>
+        </div>
       </body>
     </html>
   );

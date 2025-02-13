@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, Group, Text } from "@mantine/core";
 import { Filter } from "./filter";
 import { useEffect, useState } from "react";

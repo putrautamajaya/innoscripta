@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Filter from "./components/filter";
 import NyTimesNewsList from "./components/nyTimesNewsList";
 import TheGuardianNewsList from "./components/theGuardianNewsList";
@@ -11,13 +11,9 @@ export default function Home() {
   const [filter, setFilter] = useState({
     keyword: "",
     date: "",
-    source: "newsAPI",
+    source: "theGuardian",
   });
   const [page, setPage] = useState(1);
-
-  useEffect(() => {
-    console.log(">>> ~ Home ~ filter:", filter);
-  }, [filter]);
 
   const isSourceNewsAPI = filter.source === "newsAPI";
   const issSourceTheGuardian = filter.source === "theGuardian";

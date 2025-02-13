@@ -1,7 +1,10 @@
+"use client";
+
 import { useGuardianNewsAPI } from "../hooks/news";
 import { Filter } from "./filter";
 import NewsCard from "./newsCard";
 import Loading from "./loading";
+import NoNews from "./noNews";
 
 export interface TheGuardianNews {
   webTitle: string;
@@ -23,6 +26,7 @@ const TheGuardianNewsList = ({ filter, page }: TheGuardianNewsProps) => {
   const guardianNewsData = data?.data?.response?.results || [];
 
   if (isFetching) return <Loading />;
+  if (guardianNewsData.length === 0) return <NoNews />;
 
   return (
     <div className="grid grid-cols-1 gap-4 py-8 sm:grid-cols-2 md:grid-cols-3">

@@ -1,3 +1,5 @@
+"use client";
+
 import { useQueryNewsAPI } from "../hooks/news";
 import { Filter } from "./filter";
 import NewsCard from "./newsCard";

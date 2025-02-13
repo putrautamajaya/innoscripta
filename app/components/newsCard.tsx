@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, Image, Text, Button, Group } from "@mantine/core";
 
 interface NewsCardProps {

@@ -1,3 +1,5 @@
+"use client";
+
 import { Loader } from "@mantine/core";
 
 const Loading = () => {
