@@ -15,6 +15,6 @@ To learn more about Next.js, take a look at the following resources:
 
   docker run -p 3000:3000 putra-innoscripta
 
-- open your webbrowser and access [local](http://localhost:3000/)
+- open your web browser and access [(http://localhost:3000/](http://localhost:3000/)
 
-For Easier to access, i deploy my study case in vercel [putra-innoscripta-vercel](https://innoscripta-two.vercel.app/)
+For Easier to access, i deploy my study case in vercel [https://innoscripta-two.vercel.app/](https://innoscripta-two.vercel.app/)
