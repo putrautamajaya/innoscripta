@@ -11,7 +11,7 @@ To learn more about Next.js, take a look at the following resources:
   docker build -t putra-innoscripta
 
 - after finish building the image
-- run command
+- run command to run it on docker container
 
   docker run -p 3000:3000 putra-innoscripta
 
